@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 export class Hero {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
 }
 
 const HEROES: Hero[] = [
@@ -20,8 +20,8 @@ const HEROES: Hero[] = [
 
 
 @Component({
-    selector: 'app',
-  template:`
+  selector: 'app',
+  template: `
 <div *ngIf="selectedHero">
   <h2>{{selectedHero.name}} details!</h2>
   <div><label>id: </label>{{selectedHero.id}}</div>
@@ -94,15 +94,15 @@ styles: [`
 
 })
 export class AppComponent {
-    title = 'Tour of Heroes';
-    selectedHero: Hero;
-onSelect(hero: Hero): void {
-  this.selectedHero = hero;
-}
+  title = 'Tour of Heroes';
+  selectedHero: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
 
-    heroes = HEROES;
+  heroes = HEROES;
 
-    
+
 }
 
 
